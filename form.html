@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Registration</title>
+    </head>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("bg.jpeg");
+            background-size: cover;
+            
+        }
+        form{
+            margin-top: 7%;
+            height: 500px;
+            width: 400px;
+            background-color: rgb(248, 250, 250);
+            font-size: 20px;
+            color:black;
+            font-weight: bolder;
+            border-radius: 10%;
+        }
+        
+        td{
+            font-size: 2rem;
+            color:black;
+            font-weight: bold;
+            padding: 7px;
+        }
+        
+        .in{
+            height: 50px;
+            width: 300px;
+            border-width:.25rem;
+            font-size: 1.5rem;
+        }
+        button{
+           
+           width: 150px;
+            color: aliceblue; 
+            cursor: pointer; 
+            padding: 10px;
+            background-color: rgb(186,140,99);
+           font-size: 1.7rem;
+           border-radius: 9%;
+        }
+        .in:hover,.in:focus,button:focus{
+            background-color: rgb(246, 246, 241);  
+        }
+        button:hover{
+            background-color: rgb(186, 140, 99,0.9);  
+        }
+        p{
+            font-size: larger;
+        }
+    </style>
+    <body>
+        <form action="valid.php">
+            <h1 align="center">Welcome to my page!</h1>
+            <table align="center">
+                <tr><td>Username:</td></tr>
+                   <tr> <td><input type="text" name="un" class="in" required></td></tr> 
+            
+                <tr><td>Password:</td></tr>
+                    <tr><td><input type="password" name="pwd" class="in" required></td></tr>
+           
+                <tr><td align="center"> <button type="submit">Login</button> </td>
+                </tr></table>
+            
+               <div align="center"> 
+                <p>New User? <a href="http://localhost/internship/index.html">Sign up</a></p>
+               </div> 
+            </form>
+    </body>
+</html>
